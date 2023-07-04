@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 180px;
+    margin: auto;
+    background-color: #000;
+    place-content: center;
+    place-items: center;
+
+    p {
+        color: #fff;
+        margin-top: 10px;
+    }
+}
