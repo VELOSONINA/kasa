@@ -6,9 +6,6 @@ import ReactDOM from 'react-dom/client';
 //importer le premier composant : App
 import App from './App';
 
-//importer le style
-import './App.scss';
-
 //Créer un noeud racine react à partir de la div root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

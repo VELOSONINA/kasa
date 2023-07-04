@@ -2,56 +2,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10vh;
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 0;
     font-weight: 500;
-}
 
-a {
-    text-decoration: none;
-    padding: 10px;
+    ul { 
+        list-style: none;
 
-    li { 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-        color: #FF6060;
-        transition: 0.2s;
-        cursor: pointer;
-
-        &:hover {
-            text-decoration: underline;
-            color: #f3f3
-            ;
-        }
-    } 
-}
-
-.nav-active {
-    position: relative;
-
-    &::after {
-        content: "";
-        height: 4px;
-        width: 0;
-        position: absolute;
-        border-radius: 10px;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-animation: anim 0.3s ease forwards;
-        animation: anim 0.6s ease forwards;
-
-        @-webkit-keyframes anim {
-            to {
-                width: 100%;
-            }
-        }
-        @keyframes anim {
-            to {
-                width: 100%;
-            }
+        & a {
+            text-decoration: none;
+            padding: 10px;
             
+            & li {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 18px;
+                color: #FF6060;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            } 
+            &.active {
+                font-weight: bold;
+            }
         }
     }
+
+    
 }

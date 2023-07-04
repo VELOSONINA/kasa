@@ -1,1 +1,32 @@
+.banner {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 20px;
+  
+    .banner-img {
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.70;
+        border-radius: 25px;
+    }
+
+    .banner-content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        place-items: center;
+        place-content: center;
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+    }
+}
+
 

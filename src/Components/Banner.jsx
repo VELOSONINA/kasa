@@ -4,12 +4,12 @@ import './Banner.scss';
 
 function Banner() {
   return (
-    <React.Fragment>
-      <div className='img-banner'>
-        <img src={photo} alt='' className='img-photo' />
+    <div className='banner'>
+      <img src={photo} alt='' className='banner-img' />
+      <div className='banner-content'>
         <h1>Chez vous partout et ailleurs</h1>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 
