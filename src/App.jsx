@@ -1,28 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './Pages/About';
-import Home from './Pages/Home';
 import Header from './Components/Header';
-import Main from './Components/Main';
-import Banner from './Components/Banner';
-import Error from './Components/Error';
-import Footer from './Components/Footer';
+import RoutesTree from './Components/RoutesTree';
 import './App.scss';
+import Footer from './Components/Footer';
 
-const App = () => {
+function App() {
   return (
-    <Router>
+    <div>
       <Header />
-      <Banner />
-      <Main></Main>
+      <RoutesTree />
       <Footer />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
-    </Router>
+    </div>
   );
-};
+}
 
 export default App;

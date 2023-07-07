@@ -7,6 +7,10 @@
     padding: 40px 0;
     font-weight: 500;
 
+    .nav-logo {
+        width: 150px;
+    }
+
     ul { 
         list-style: none;
 
@@ -17,18 +21,41 @@
             & li {
                 display: inline-block;
                 margin-right: 10px;
-                font-size: 18px;
+                font-size: 24px;
                 color: #FF6060;
     
                 &:hover {
                     text-decoration: underline;
                 }
             } 
-            &.active {
-                font-weight: bold;
-            }
         }
-    }
+        // .nav-active {
+        //     position: relative;
 
-    
+        //     &::after {
+        //         content: "";
+        //         height: 4px;
+        //         width: 0;
+        //         position: absolute;
+        //         border-radius: 10px;
+        //         bottom: 0px;
+        //         left: 50%;
+        //         transform: translateX(-50%);
+        //         -webkit-animation: anim 0.3s ease forwards;
+        //         animation: anim 0.6s ease forwards;
+        
+        //         @-webkit-keyframes anim {
+        //             to {
+        //                 width: 100%;
+        //             }
+        //         }
+        //         @keyframes anim {
+        //             to {
+        //                 width: 100%;
+        //             }
+                    
+        //         }
+        //     }
+        // }
+    } 
 }
