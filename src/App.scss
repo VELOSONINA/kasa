@@ -1,7 +1,10 @@
-$color-1:#FF6060;
-$color-2:#000;
-$color-3:#fff;
-$font-family : "Montserrat", sans-serif;
+::root {
+  $color-1:#FF6060;
+  $color-2:#000;
+  $color-3:#fff;
+  $color-4:#f6f6f6;
+  $font-family : "Montserrat", sans-serif;
+}
 
 * {
     margin: 0;

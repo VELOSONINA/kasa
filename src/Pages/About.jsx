@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Banner from '../Components/Banner';
+import Logements from '../Components/Logements';
 function About() {
   return (
     <div>
-      <h1>A propos</h1>
+      <Banner />
+      <Logements />
     </div>
   );
 }

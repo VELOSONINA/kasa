@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    align-items: flex-end ;
+    background: linear-gradient(#ff6060,#640d0d);
+    height: 340px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+
+    .img-gallery {
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+    
+    }
+
+    @media screen and (width<=768px){
+        width: 100%;
+    }    
+}
