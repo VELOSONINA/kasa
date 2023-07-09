@@ -1,6 +1,8 @@
+@use "/src/Styles/index.scss";
+
 .cards {
     display: flex;
-    align-items: flex-end ;
+    flex-direction: column-reverse;
     background: linear-gradient(#ff6060,#640d0d);
     height: 340px;
     width: 30%;
@@ -13,7 +15,12 @@
         width: 100%;
         margin: auto;
         border-radius: 10px;
-    
+
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
     }
 
     @media screen and (width<=768px){

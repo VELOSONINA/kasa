@@ -1,11 +1,11 @@
 import React from 'react';
-import Banner from '../Components/Banner';
-import Logements from '../Components/Logements';
+import { AboutBanner } from '../Components/Banner';
+import '../Styles/About.scss';
+
 function About() {
   return (
     <div>
-      <Banner />
-      <Logements />
+      <AboutBanner />
     </div>
   );
 }

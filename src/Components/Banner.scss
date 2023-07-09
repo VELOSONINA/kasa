@@ -1,3 +1,5 @@
+@use '/src/Styles/index.scss';
+
 .banner {
     position: relative;
     display: flex;
@@ -5,36 +7,9 @@
     height: 180px;
     margin: auto;
     margin-bottom: 30px;
-    background-color: black;
+    background-color: #000;
     z-index: 1;
     border-radius: 25px;
-  
-    .banner-img {
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-        opacity: 0.70;
-        border-radius: 25px;
-    }
-
-    .banner-content {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        place-items: center;
-        place-content: center;
-
-        h1 {
-            font-size: 48px;
-            // margin-bottom: 10px;
-            color: #fff;
-
-            @media screen and (width<=768px){
-                font-size: 26px;
-                margin: 20px;
-            }
-        }
-    } 
 }
 
 

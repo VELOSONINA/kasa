@@ -1,17 +1,15 @@
 import React from 'react';
 import './Cards.scss';
+import './Gallery.scss';
 import { Link } from 'react-router-dom';
 
-function Cards({ data }) {
+function Cards() {
   return (
     <div className='cards'>
-      <Link to='/about'>
+      <Link to='/Accomodities'>
         Titre de la
         <br /> location
       </Link>
-      <h3>{data.title}</h3>
-      <img src={data.cover} alt={data.title} className='img-gallery' />
-      {/* {<p>{data.description}</p>} */}
     </div>
   );
 }

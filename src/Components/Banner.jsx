@@ -1,5 +1,6 @@
 import React from 'react';
 import photo from '../assets/images/photo.png';
+import kalen from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 import './Banner.scss';
 
 function Banner() {
@@ -13,4 +14,10 @@ function Banner() {
   );
 }
 
+export const AboutBanner = () => (
+  <div className='banner'>
+    <img src={kalen} alt='' className='banner-kalen' />
+    <Banner />
+  </div>
+);
 export default Banner;

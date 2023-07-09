@@ -1,3 +1,5 @@
+@use '/src/Styles/index.scss';
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +11,8 @@
     border-radius: 25px;
     gap: 30px;
 
-    @media screen and (width<=768px){
-        background-color: white;
+    @media screen and (max-width:767px){
+        background-color: #ffff;
         padding: inherit;
 
 

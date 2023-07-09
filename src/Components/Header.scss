@@ -31,3 +31,19 @@
         }
     } 
 }
+
+@media screen and (max-width:767px){
+    .nav-bar {
+        .nav-logo {
+            width: 80px;
+        }
+        ul {
+            & a {  
+                padding: 5px; 
+                & li {
+                    font-size:  16px; ;
+                }
+            }
+        }
+    }
+}
