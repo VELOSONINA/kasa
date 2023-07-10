@@ -1,15 +1,15 @@
-@use "/src/Styles/index.scss";
+@import "/src/Styles/Variables.scss";
 
 .cards {
     display: flex;
     flex-direction: column-reverse;
-    background: linear-gradient(#ff6060,#640d0d);
+    background: $background-linear;
     height: 340px;
     width: 30%;
     margin: auto;
     border-radius: 10px;
     padding: 20px;
-    color: #fff;
+    color: #fff$color-3;
 
     .img-gallery {
         width: 100%;
@@ -19,7 +19,7 @@
     }
 
     a {
-        color: #fff;
+        color: $color-3;
         text-decoration: none;
     }
 

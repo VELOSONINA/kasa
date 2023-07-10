@@ -10,7 +10,7 @@ const RoutesTree = () => {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
-      <Route path='/Accomodities' element={Accomodities} />
+      <Route path='/Accomodities' element={<Accomodities />} />
       <Route path='*' element={<ErrorPage />} />
     </Routes>
   );

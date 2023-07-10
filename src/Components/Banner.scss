@@ -1,4 +1,4 @@
-@use '/src/Styles/index.scss';
+@import '../Styles/Variables.scss';
 
 .banner {
     position: relative;
@@ -7,7 +7,7 @@
     height: 180px;
     margin: auto;
     margin-bottom: 30px;
-    background-color: #000;
+    background-color: $color-2;
     z-index: 1;
     border-radius: 25px;
 }

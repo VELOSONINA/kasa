@@ -1,7 +1,9 @@
+@import '../Styles/Variables.scss';
+
 .error404 {
     margin: auto;
     width: 90%;
-    color: #ff6060;
+    color: $color-1;
     text-align: center;
     margin-bottom: 80px;
     

@@ -1,3 +1,5 @@
+@import '../Styles/Variables.scss'; 
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -22,7 +24,7 @@
                 display: inline-block;
                 margin-right: 10px;
                 font-size: 24px;
-                color: #FF6060;
+                color: $color-1;
     
                 &:hover {
                     text-decoration: underline;
