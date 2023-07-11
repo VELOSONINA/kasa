@@ -1,4 +1,4 @@
-@import '/src/Styles/Variables.scss';
+@use "/src/Styles/Variables.scss";
 
 .gallery {
     display: flex;

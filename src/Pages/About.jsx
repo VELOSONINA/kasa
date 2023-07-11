@@ -1,13 +1,13 @@
 import React from 'react';
-import { AboutBanner } from '../Components/Banner';
-import '../Styles/About.scss';
+import Banner from '../Components/Banner';
+import imageUrl from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 
-function About() {
+const About = () => {
   return (
     <div>
-      <AboutBanner />
+      <Banner imageUrl={imageUrl} />
     </div>
   );
-}
+};
 
 export default About;

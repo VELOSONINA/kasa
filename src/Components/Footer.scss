@@ -1,4 +1,4 @@
-@import '../Styles/Variables.scss';
+@use "/src/Styles/Variables.scss";
 
 .footer {
     display: flex;
@@ -9,6 +9,9 @@
     background-color: $color-2;
     place-content: center;
     place-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
 
     p {
         color: #fff;

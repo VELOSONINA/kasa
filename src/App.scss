@@ -1,7 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-  }
+@import './Styles/Variables.scss';
+@import './Components/Gallery/Cards.scss';
+@import './Components/Gallery/Gallery.scss';
+@import './Styles/Home.scss';
+@import './Styles/About.scss';
+@import './Components/Banner.scss';
+@import './Components/Accomodities.scss';
+@import './Components/ErrorPage.scss';
+@import './Components/Header.scss';
+@import './Components/Footer.scss';
+
 

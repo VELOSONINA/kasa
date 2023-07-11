@@ -1,11 +1,14 @@
 import React from 'react';
 import Banner from '../Components/Banner';
 import Gallery from '../Components/Gallery/Gallery';
-import '../Styles/Home.scss';
+import imageUrl from '../assets/images/photo.png';
+
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Banner imageUrl={imageUrl}>
+        <h1>Chez vous, partout et ailleurs</h1>
+      </Banner>
       <Gallery />
     </div>
   );

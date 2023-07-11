@@ -3,7 +3,6 @@ import { BrowserRouter as Router} from 'react-router-dom';
 //Importer les outils React
 import ReactDOM from 'react-dom/client';
 
-import './Styles/Variables.scss';
 //importer le premier composant : App
 import App from './App';
 

@@ -1,16 +1,15 @@
 import React from 'react';
-import './Gallery.scss';
 import Cards from './Cards';
 import dataLogements from '../Data/logements.json';
 
-function Gallery() {
+const Gallery = () => {
   return (
     <div className='gallery'>
       {dataLogements.map((logement) => (
-        <Cards key={logement.id} data={logement} />
+        <Cards key={logement.id} logement={logement} />
       ))}
     </div>
   );
-}
+};
 
 export default Gallery;
