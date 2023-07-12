@@ -4,7 +4,10 @@
 @import './Styles/Home.scss';
 @import './Styles/About.scss';
 @import './Components/Banner.scss';
-@import './Components/Accomodities.scss';
+@import './Components/Accomodities/Accomodities.scss';
+@import './Components/Accomodities/Carousel.scss';
+@import './Components/Accomodities/Buttons.scss';
+@import './Components/Accomodities/Descriptions.scss';
 @import './Components/ErrorPage.scss';
 @import './Components/Header.scss';
 @import './Components/Footer.scss';

@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
 import ErrorPage from '../Components/ErrorPage';
-import Accomodities from './Accomodities';
+import Accomodities from './Accomodities/Accomodities';
 
 const RoutesTree = () => {
   return (

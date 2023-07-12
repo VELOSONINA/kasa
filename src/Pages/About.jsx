@@ -1,11 +1,11 @@
 import React from 'react';
 import Banner from '../Components/Banner';
-import imageUrl from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import imageBanner from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 
 const About = () => {
   return (
     <div>
-      <Banner imageUrl={imageUrl} />
+      <Banner imageUrl={imageBanner} />
     </div>
   );
 };

@@ -1,8 +1,7 @@
 @use "/src/Styles/Variables.scss";
 
 .cards {
-    display: flex;
-    flex-direction: column-reverse;
+    display: block;
     background: $background-linear;
     width: 30%;
     margin: auto;

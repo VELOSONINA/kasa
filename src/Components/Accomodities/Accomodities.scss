@@ -1,0 +1,9 @@
+@use "/src/Styles/Variables.scss";
+
+.accomodities {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    color: $color-1;
+}
