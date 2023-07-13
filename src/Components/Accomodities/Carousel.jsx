@@ -1,4 +1,4 @@
-import React from 'react';
+//import React, { useState } from 'react';
 import logements from '../Data/logements.json';
 
 const Carousel = () => {
