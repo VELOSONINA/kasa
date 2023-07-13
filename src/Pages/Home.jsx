@@ -5,7 +5,7 @@ import imageBanner from '../assets/images/photo.png';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-content'>
       <Banner imageUrl={imageBanner}>
         <h1>Chez vous, partout et ailleurs</h1>
       </Banner>
