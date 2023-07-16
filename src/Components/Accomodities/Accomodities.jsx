@@ -1,12 +1,22 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import Carousel from './Carousel';
-import Buttons from './Buttons';
+import Sections from './Sections';
+import logements from '../Data/logements.json';
 
 function Accomodities() {
+  // récuprer la valeur de l'id dans l'url
+  const { id } = useParams();
+
+  const logement = logements.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return;
+  }
   return (
     <div className='accomodities'>
-      <Carousel />
-      <Buttons />
+      <Carousel logement={logement} />
+      <Sections logement={logement} />
     </div>
   );
 }

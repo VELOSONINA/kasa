@@ -1,23 +1,18 @@
 @use "/src/Styles/Variables.scss";
 
-.descriptions,
-.equipements {
+.articles {
     margin-bottom: 30px;
     font-size: 18px;
     gap: 30px;
 
-    .description-title,
-    .equipement-title {
-        display: flex;
-        justify-content: space-between;
+    .title {
         background-color: $color-1;
         color: $color-3;
         padding: 20px;
         border-radius:10px;
     }
     
-    .description-content,
-    .equipement-content {
+    .content {
         background-color: $color-4;
         color: $color-1;
         padding: 20px;

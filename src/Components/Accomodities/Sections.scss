@@ -1,0 +1,115 @@
+@use "/src/Styles/Variables.scss";
+.sections {
+    .header {
+        h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+        .float-clear {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .keywords {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,150px));
+            gap : 20px;
+            span {
+                background-color: $color-1;
+                color: $color-3;
+                padding: 5px 50px;
+                border-radius: 10px;  
+                text-align: center;             
+            }
+        p {
+            font-weight: 500;
+            margin-bottom: 20px;
+    
+            span {    
+                img { 
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                }
+            }
+                   
+        
+        }
+
+        .stars {
+            position: absolute;
+            bottom: 20px;
+        }
+        }
+    }
+    
+}
+    
+            
+//     .descriptions-container {
+//         display: flex;
+//         flex-direction: row;
+//         gap: 30px;
+//         justify-content: space-between;
+        
+//     }
+
+
+
+// @media (max-width: 767px) {
+//     .container-buttons{
+//         .titles {
+//             flex-direction: column;
+        
+//             .titles-content {
+          
+//                 h1{
+//                     font-size: 24px;
+//                 }
+//                 h2 {
+//                     font-size: 18px;
+//                     margin: 10px 0 20px 0;
+//                 }
+          
+//             .buttons-content {
+//                 align-items: center;
+//                 margin: 10px 0;
+//                 gap: 10px;
+            
+//                 button {
+//                     padding: 5px  30px;
+//                     font-size: 12px;
+//                 }
+//             }
+//         }
+        
+//         .icons-container {
+//           margin-top: 20px;
+          
+//             .content-icons {
+//                 justify-content: flex-end;
+                
+//                 h3 {
+//                     font-size: 16px;
+//                     margin-right: 5px;
+//                     align-items: center;
+//                     margin-bottom: 10px;
+//                 }
+    
+//                 .circle-icon {
+//                     height: 36px;
+//                     width: 36px;
+//                 }
+//             }
+    
+//             .stars {
+//                 bottom: 10px;
+//             }
+//         }
+//       }
+    
+//     }
+    
+    
+//     }
+    

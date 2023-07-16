@@ -1,16 +1,12 @@
-//import React, { useState } from 'react';
-import logements from '../Data/logements.json';
+const Carousel = (props) => {
+  const { logement } = props;
 
-const Carousel = () => {
-  const imagesCarousel = logements[0].pictures;
+  const { pictures } = logement;
+  const imageCarousel = pictures.map((picture, index) => (
+    <img key={index} src={picture} alt='' />
+  ));
 
-  return (
-    <div className='carousel'>
-      {imagesCarousel.map((imageCarousel, index) => (
-        <img key={index} src={imageCarousel} alt='' />
-      ))}
-    </div>
-  );
+  return <div className='carousel'>{imageCarousel}</div>;
 };
 
 export default Carousel;
