@@ -5,27 +5,27 @@ const Sections = (props) => {
   const { logement } = props;
   const { title, rating, location, host, tags } = logement;
   const { name, picture } = host;
+  const maxRating = 5;
 
-  // Générer les étoiles en fonction du rating
   const generateStars = () => {
     const stars = [];
-    const maxRating = 5;
 
-    for (let i = 0; i < maxRating; i++) {
-      if (i < rating) {
+    for (let i = 1; i <= maxRating; i++) {
+      if (i <= rating) {
         stars.push(
-          <span className='material-symbols-outlined' key={i}>
-            star
+          <span key={i} className='star-fill'>
+            ★
           </span>
         );
       } else {
         stars.push(
-          <span className='material-symbols-outlined' key={i}>
-            star_border
+          <span key={i} className='star-empty'>
+            ☆
           </span>
         );
       }
     }
+
     return stars;
   };
 
@@ -33,20 +33,22 @@ const Sections = (props) => {
     <div className='sections'>
       <div className='header'>
         <h1>{title}</h1>
-        <p className='float-right'>
-          <span>{name}</span>
+        <p className='profils'>
+          <span className='name-container'>
+            <span className='first-name'>{name.split(' ')[0]}</span>
+            <span className='last-name'>{name.split(' ')[1]}</span>
+          </span>
           <span>
             <img src={picture} alt='' />
           </span>
         </p>
-        <p className='float-clear'>{location}</p>
+        <p className='location'>{location}</p>
         <div className='keywords'>
           {tags.map((tag, index) => (
             <span key={index}>{tag}</span>
           ))}
         </div>
-        {/* affiche les étoiles avec les anotations */}
-        <div>{generateStars()}</div>
+        <div className='stars'>{generateStars()}</div>
       </div>
 
       <Articles logement={logement} />

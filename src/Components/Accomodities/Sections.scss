@@ -1,30 +1,28 @@
 @use "/src/Styles/Variables.scss";
 .sections {
     .header {
+            position: relative;
+            margin-bottom: 30px;
+
         h1 {
-            margin-bottom: 10px;
-            font-size: 36px;
-        }
-        .float-clear {
-            font-size: 24px;
             margin-bottom: 10px;
         }
 
-        .keywords {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(100px,150px));
-            gap : 20px;
-            span {
-                background-color: $color-1;
-                color: $color-3;
-                padding: 5px 50px;
-                border-radius: 10px;  
-                text-align: center;             
-            }
-        p {
+        .profils {
+            display: inline-flex;
+            align-items: center;
+            position: absolute;
+            bottom: 50%;
+            right: 0;
             font-weight: 500;
-            margin-bottom: 20px;
-    
+           
+            .name-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 10px;
+              }
+              
             span {    
                 img { 
                     width: 65px;
@@ -32,84 +30,108 @@
                     border-radius: 50%;
                 }
             }
-                   
-        
+        }
+
+        .location {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .keywords {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px, 180px));
+            gap : 20px;
+
+            span {
+                background-color: $color-1;
+                color: $color-3;
+                padding: 5% 0%;
+                border-radius: 10px;  
+                text-align: center;             
+            }
         }
 
         .stars {
             position: absolute;
-            bottom: 20px;
-        }
+            top: 68%;
+            right: 0%;
+            font-size: xx-large;
+
+            .star-empty {
+                color: $color-6;
+            }
         }
     }
-    
 }
-    
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sections {
+        .header {
+
+            h1 {
+                font-size: 28px;
+            }
+            .profils {
+                bottom: -5%;                  
+            }
+
+            .keywords {
+                margin-bottom: 30px;
             
-//     .descriptions-container {
-//         display: flex;
-//         flex-direction: row;
-//         gap: 30px;
-//         justify-content: space-between;
-        
-//     }
+                span {
+                    margin-right: 5px;            
+                }
+            }
 
+            .location {
+               font-size: 20px; 
+            }
 
+            .stars {
+                position: initial;
 
-// @media (max-width: 767px) {
-//     .container-buttons{
-//         .titles {
-//             flex-direction: column;
-        
-//             .titles-content {
-          
-//                 h1{
-//                     font-size: 24px;
-//                 }
-//                 h2 {
-//                     font-size: 18px;
-//                     margin: 10px 0 20px 0;
-//                 }
-          
-//             .buttons-content {
-//                 align-items: center;
-//                 margin: 10px 0;
-//                 gap: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sections {
+        .header {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .profils {
+                bottom: -12%;
+
+                .name-container {
+                    font-size: 14px;
+                  }
+            }
+
+            .keywords {
+                grid-template-columns: repeat(auto-fit, minmax(40px, 100px));
+                margin-bottom: 30px;
+                gap: 5px;
             
-//                 button {
-//                     padding: 5px  30px;
-//                     font-size: 12px;
-//                 }
-//             }
-//         }
-        
-//         .icons-container {
-//           margin-top: 20px;
-          
-//             .content-icons {
-//                 justify-content: flex-end;
-                
-//                 h3 {
-//                     font-size: 16px;
-//                     margin-right: 5px;
-//                     align-items: center;
-//                     margin-bottom: 10px;
-//                 }
-    
-//                 .circle-icon {
-//                     height: 36px;
-//                     width: 36px;
-//                 }
-//             }
-    
-//             .stars {
-//                 bottom: 10px;
-//             }
-//         }
-//       }
-    
-//     }
-    
-    
-//     }
+                span {
+                    padding: 7px 0;
+                    margin: 0px 10px 10px 0px;
+                    font-size: 12px;         
+                }
+            }
+
+            .location {
+                font-size: 18px; 
+             }
+
+            .stars {
+                position: initial;
+                font-size: large;
+            }
+        }
+    }
+}
     

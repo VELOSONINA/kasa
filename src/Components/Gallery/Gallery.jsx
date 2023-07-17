@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from './Cards';
-import dataLogements from '../Data/logements.json';
+import dataLogements from '../../assets/Data/logements.json';
 
 const Gallery = () => {
   return (
