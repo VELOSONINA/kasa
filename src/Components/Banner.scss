@@ -26,7 +26,11 @@
         font-size: 48px;
         color: $color-3;
 
-        @media screen and (max-width:768px){
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 34px;
+        }
+
+        @media screen and (max-width:767px){
             top: 24%;
             font-size: 26px;
             margin: 20px;
