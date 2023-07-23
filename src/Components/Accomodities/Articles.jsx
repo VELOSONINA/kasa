@@ -5,33 +5,25 @@ const Articles = (props) => {
   const { logement } = props;
   const { description, equipments } = logement;
 
-  const [isOpenDescription, setIsOpenDescription] = useState(false);
-  const [isOpenEquipments, setIsOpenEquipments] = useState(false);
-
-  const toggleDescriptionAccordion = () => {
-    setIsOpenDescription(!isOpenDescription);
-  };
-
-  const toggleEquipmentsAccordion = () => {
-    setIsOpenEquipments(!isOpenEquipments);
-  };
+  const [isDescriptionOpen, setDescriptionOpen] = useState(false);
+  const [isEquipmentsOpen, setEquipmentsOpen] = useState(false);
 
   return (
     <div className='articles'>
       <div className='articles-content'>
         <Accordion
-          title='Description :'
-          isOpen={isOpenDescription}
-          toggleAccordion={toggleDescriptionAccordion}
+          title='Description'
+          isOpen={isDescriptionOpen}
+          toggleAccordion={() => setDescriptionOpen(!isDescriptionOpen)}
         >
           <p>{description}</p>
         </Accordion>
       </div>
       <div className='articles-content'>
         <Accordion
-          title='Équipements :'
-          isOpen={isOpenEquipments}
-          toggleAccordion={toggleEquipmentsAccordion}
+          title='Equipments'
+          isOpen={isEquipmentsOpen}
+          toggleAccordion={() => setEquipmentsOpen(!isEquipmentsOpen)}
         >
           <ul>
             {equipments.map((equipment, index) => (

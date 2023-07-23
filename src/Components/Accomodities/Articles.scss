@@ -18,11 +18,11 @@
     }
 }
 
-@media screen and (width<=768px){
+@media only screen and (max-width:767px){
     .articles {
-        display: initial;
+        display: unset;
 
-        .articles-content {
+        .articles-content{
             width: 100%;
         }
     }
