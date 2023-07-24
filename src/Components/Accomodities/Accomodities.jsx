@@ -1,18 +1,21 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Carousel from './Carousel';
 import Sections from './Sections';
-import logements from '../../assets/Data/logements.json';
+import { useParams, useNavigate } from 'react-router-dom';
 
-function Accomodities() {
-  // récuprer la valeur de l'id dans l'url
+function Accomodities({ logements }) {
+  // Recevoir les données logements en tant que prop
   const { id } = useParams();
-
   const logement = logements.find((logement) => logement.id === id);
 
+  const navigate = useNavigate();
+
   if (!logement) {
-    return;
+    // rediriger vers une page d'erreur
+    navigate(<errorPage />);
+    return null;
   }
+
   return (
     <div className='accomodities'>
       <Carousel logement={logement} />
