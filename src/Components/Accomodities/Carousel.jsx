@@ -18,15 +18,23 @@ const Carousel = (props) => {
     );
   };
 
+  const changeSlidesByIndex = (index) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <div className='carousel'>
       <div className='slide-container'>
         <img src={pictures[currentSlide]} alt='' />
       </div>
-      <div className='slide-numeration'>
-        <p>
-          {currentSlide + 1} / {pictures.length}
-        </p>
+      <div className='dots'>
+        {pictures.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentSlide === index ? 'active' : ''}`}
+            onClick={() => changeSlidesByIndex(index)}
+          ></span>
+        ))}
       </div>
       <div className='arrow-container'>
         <img src={arrowLeft} alt='' onClick={prevSlide} />
