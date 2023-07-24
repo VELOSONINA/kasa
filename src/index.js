@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client';
 //importer le premier composant : App
 import App from './App';
 
+
 //Créer un noeud racine react à partir de la div root
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+        <App />
     </Router>
   </React.StrictMode>
 );
