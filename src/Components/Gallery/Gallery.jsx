@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Cards from './Cards';
 import logementsData from '../../assets/Data/logements.json';
+import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
   const [logements, setLogements] = useState([]);
+  const navigate = useNavigate(); // useNavigate pour effectuer le changement de route
 
   useEffect(() => {
     // fonction asynchrone pour charger les données
@@ -17,15 +19,27 @@ const Gallery = () => {
       } catch (error) {
         console.error(error);
         setLoading(false);
+        navigate(''); // Redirection en cas d'erreur
       }
     };
 
     // Appel de la fonction fetchData pour charger les données
     fetchData();
-  }, []);
+  }, [navigate]);
 
   if (loading) {
-    return <div className='spinner' />;
+    const numberDots = 5; // Nombre de points dans l'animation
+    const dots = Array.from({ length: numberDots }, (_, index) => (
+      <div key={index} className='dot'></div>
+    ));
+
+    return (
+      <div className='gallery'>
+        <div className='spinner'>
+          <div className='dots-container'>{dots}</div>
+        </div>
+      </div>
+    );
   }
 
   return (
