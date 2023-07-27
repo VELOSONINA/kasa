@@ -3,7 +3,7 @@
 .about-content {
     width: 90%;
     margin: auto;
-    min-height: calc(110vh - $height-minus-400px);
+    min-height: $height-minus-400px;
     .about-accordion {
         margin-bottom: 30px;    
     }

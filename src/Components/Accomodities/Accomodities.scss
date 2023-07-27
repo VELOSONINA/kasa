@@ -6,7 +6,7 @@
     width: 90%;
     margin: auto;
     color: $color-1;
-    min-height: calc(110vh - $height-minus-400px);
+    min-height: $height-minus-400px;
 
     @media only screen and  (max-width:767px) {   
         .titles-content {
