@@ -20,7 +20,7 @@ const About = () => {
       } catch (error) {
         console.error(error);
         // Effectuer le changement de route dynamique vers la page d'accueil en cas d'erreur
-        navigate('/Home');
+        navigate('/');
       }
     };
 
