@@ -22,24 +22,31 @@ const Carousel = (props) => {
     setCurrentSlide(index);
   };
 
+  const dispalyNavigation = pictures.length > 1;
+
   return (
     <div className='carousel'>
       <div className='slide-container'>
         <img src={pictures[currentSlide]} alt='' />
       </div>
-      <div className='dots'>
-        {pictures.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${currentSlide === index ? 'active' : ''}`}
-            onClick={() => changeSlidesByIndex(index)}
-          ></span>
-        ))}
-      </div>
-      <div className='arrow-container'>
-        <img src={arrowLeft} alt='' onClick={prevSlide} />
-        <img src={arrowRight} alt='' onClick={nextSlide} />
-      </div>
+      {/* Affiche les dots et les arrows si plusieurs images */}
+      {dispalyNavigation && (
+        <div className='display-navigation'>
+          <div className='dots'>
+            {pictures.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${currentSlide === index ? 'active' : ''}`}
+                onClick={() => changeSlidesByIndex(index)}
+              ></span>
+            ))}
+          </div>
+          <div className='arrow-container'>
+            <img src={arrowLeft} alt='' onClick={prevSlide} />
+            <img src={arrowRight} alt='' onClick={nextSlide} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
