@@ -8,6 +8,11 @@
     color: $color-pink;
     min-height: $height-minus-400px;
 
+    
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        min-height: calc(65vh - 400px);
+    }
+
     @media only screen and  (max-width:767px) {   
         .titles-content {
             h1 {

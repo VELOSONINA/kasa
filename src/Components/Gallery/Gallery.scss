@@ -85,6 +85,11 @@
   border-radius: 25px;
   gap: 30px;
 
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    gap: 15px;
+    padding: 30px;
+  }
+
   @media screen and (max-width:767px){
     background-color: $color-white;
     padding: inherit;

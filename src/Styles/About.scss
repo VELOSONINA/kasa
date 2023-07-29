@@ -5,9 +5,22 @@
     margin: auto;
     min-height: $height-minus-400px;
     .about-accordion {
-        margin: 30px 60px;  
-        @media screen and (max-width:767px){
-            margin: 30px 0
-        }      
+        margin: 30px 60px;        
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .about-content {
+      min-height: calc(68vh - 400px);  
+    } 
+}
+
+@media screen and (max-width:767px){
+    .about-content {
+        margin-bottom: 30px;
+
+        .about-accordion{
+            margin: 30px 0
+        }
+    }
+}    

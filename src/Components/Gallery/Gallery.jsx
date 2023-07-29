@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Cards from './Cards';
-import logementsData from '../../assets/Data/logements.json';
+//import logementsData from '../../assets/Data/logements.json';
 import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
@@ -17,7 +17,7 @@ const Gallery = () => {
         console.log(logementsResponse);
         // délai pour charger les données
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        setLogements(logementsData);
+        setLogements(logementsResponse);
         setLoading(false);
       } catch (error) {
         console.error(error);
