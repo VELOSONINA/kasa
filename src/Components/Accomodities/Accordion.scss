@@ -5,8 +5,8 @@
     position: relative;
     align-items: center;
     margin: 0;
-    background-color: $color-1;
-    color: $color-3;
+    background-color: $color-pink;
+    color: $color-white;
     border-radius:10px;
     cursor: pointer;
 
@@ -24,8 +24,8 @@
 }
   
     .accordion-content {
-        background-color: $color-4;
-        color: $color-1;
+        background-color: $color-gray-light;
+        color: $color-pink;
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 30px;

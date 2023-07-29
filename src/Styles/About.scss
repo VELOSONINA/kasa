@@ -5,6 +5,9 @@
     margin: auto;
     min-height: $height-minus-400px;
     .about-accordion {
-        margin-bottom: 30px;    
+        margin: 30px 60px;  
+        @media screen and (max-width:767px){
+            margin: 30px 0
+        }      
     }
 }

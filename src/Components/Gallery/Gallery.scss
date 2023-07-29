@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: $color-1;
+  background-color: $color-pink;
   opacity: 1;
   position: fixed;
   inset: 0;
@@ -29,27 +29,27 @@
       animation: scaleAndTranslateDots 1s linear infinite;
 
       &:nth-child(1) {
-        background-color: $color-6;
+        background-color: $color-gray-dark;
         animation-delay: 0s;
       }
 
       &:nth-child(2) {
-        background-color: $color-4;
+        background-color: $color-white;
         animation-delay: 0.2s;
       }
 
       &:nth-child(3) {
-        background-color: $color-6;
+        background-color: $color-gray-dark;
         animation-delay: 0.4s;
       }
 
       &:nth-child(4) {
-        background-color: $color-4;
+        background-color: $color-white;
         animation-delay: 0.6s;
       }
 
       &:nth-child(5) {
-        background-color: $color-6;
+        background-color: $color-gray-dark;
         animation-delay: 0.8s;
       }
     }
@@ -79,14 +79,14 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  background-color: $color-4;
+  background-color: $color-gray-light;
   padding: 50px;
   margin-bottom: 30px;
   border-radius: 25px;
   gap: 30px;
 
   @media screen and (max-width:767px){
-    background-color: $color-3;
+    background-color: $color-white;
     padding: inherit;
   }
 }
