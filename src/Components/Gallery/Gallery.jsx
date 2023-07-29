@@ -12,6 +12,9 @@ const Gallery = () => {
     // fonction asynchrone pour charger les données
     const fetchData = async () => {
       try {
+        let response = await fetch('logements.json');
+        let logementsResponse = await response.json();
+        console.log(logementsResponse);
         // délai pour charger les données
         await new Promise((resolve) => setTimeout(resolve, 1000));
         setLogements(logementsData);
