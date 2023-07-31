@@ -7,12 +7,17 @@
     background-color: $color-black;
     place-content: center;
     place-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
 
     p {
         color: #fff;
         margin-top: 10px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        height: 12vh;
+
+    }
+    @media screen and (max-width:767px){
+        height: 12vh;
     }
 }

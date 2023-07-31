@@ -3,20 +3,22 @@
 .about-content {
     width: 90%;
     margin: auto;
-    min-height: $height-minus-400px;
+    min-height: calc(100vh - 308px);
+
     .about-accordion {
         margin: 30px 60px;        
     }
 }
-
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .about-content {
-      min-height: calc(78vh - 400px);  
-    } 
-}
+        min-height: calc(100vh - 237px);
+    }
+  }
+
 
 @media screen and (max-width:767px){
     .about-content {
+        min-height: calc(100vh - 244px);
         margin-bottom: 30px;
 
         .about-accordion{

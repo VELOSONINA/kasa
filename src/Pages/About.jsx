@@ -10,7 +10,6 @@ const About = () => {
   const [accordions, setAccordions] = useState([]);
 
   useEffect(() => {
-    // Une requête asynchrone pour récupérer les données depuis about.json ou API
     const fetchData = async () => {
       try {
         // les données importées depuis confidentialite.json
@@ -19,7 +18,7 @@ const About = () => {
         );
       } catch (error) {
         console.error(error);
-        // Effectuer le changement de route dynamique vers la page d'accueil en cas d'erreur
+        //changement de route dynamique vers la page d'accueil en cas d'erreur
         navigate('/');
       }
     };

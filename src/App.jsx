@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='app-root'>
       <Header />
       <RoutesTree />
       <Footer />

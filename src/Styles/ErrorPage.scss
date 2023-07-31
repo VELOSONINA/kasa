@@ -4,10 +4,8 @@
     margin: auto;
     width: 90%;
     color: $color-pink;
-    text-align: center;
-    // margin-bottom: 80px;
-    min-height: $height-minus-400px;
-   
+    text-align: center;  
+    min-height: calc(100vh - 308px);
     
     h1 {
         font-size: 200px;
@@ -17,7 +15,7 @@
     p {
         font-size: 36px;
         font-weight: 500;
-        padding: 50px 0;
+        padding: 64px 0;
         word-wrap: break-word;
     }
 
@@ -26,22 +24,33 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px){
-    .error404 {
-        min-height: calc(78vh - 400px);
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .error404{
+        min-height: calc(100vh - 327px);
+        margin-top: 10vh;
+
+        h1 {
+            font-size: 18vw;
+        }
+        
+        p{
+            font-size: 2vh5vw;
+        }
     }
+    
 }
 
 @media screen and (max-width:767px){
     .error404 {
-        min-height: calc(69vh - 100px);
+        margin-top: 9vh;
+        min-height: calc(100vh - 296px);
 
         h1 {
-            margin-top: 60px;
-            font-size: 100px;
+            font-size: 17vw;
         }
+
         p{
-            font-size: 20px;
+            font-size: 5vw;
         }
     }
 }
