@@ -1,0 +1,31 @@
+@use "/src/Styles/Variables.scss";
+
+.stars {
+    position: absolute;
+    top: 68%;
+    right: 0%;
+    font-size: xx-large;
+
+    .star-fill {
+        color: $color-pink;
+    }
+
+    .star-empty {
+        color: $color-gray-dark;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .stars {
+        position: initial;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .stars {
+        position: initial;
+        font-size: x-large;
+        margin-bottom: 40px;
+    }
+}
