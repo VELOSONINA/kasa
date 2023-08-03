@@ -51,17 +51,6 @@
                 line-height: 1.5em;             
             }
         }
-
-        .stars {
-            position: absolute;
-            top: 68%;
-            right: 0%;
-            font-size: xx-large;
-
-            .star-empty {
-                color: $color-gray-dark;
-            }
-        }
     }
 }
 
@@ -90,11 +79,6 @@
             .location {
                font-size: 20px; 
                margin-bottom: 35px;
-            }
-
-            .stars {
-                position: initial;
-
             }
         }
     }
@@ -132,12 +116,6 @@
             .location {
                 font-size: 18px; 
              }
-
-            .stars {
-                position: initial;
-                font-size: x-large;
-                margin-bottom: 40px;
-            }
         }
     }
 }

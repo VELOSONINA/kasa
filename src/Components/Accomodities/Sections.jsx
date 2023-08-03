@@ -1,33 +1,12 @@
 import React from 'react';
 import Articles from './Articles';
+import Rating from './Rating';
 
 const Sections = (props) => {
   const { logement } = props;
-  const { title, rating, location, host, tags } = logement;
+  const { title, location, host, tags } = logement;
   const { name, picture } = host;
   const maxRating = 5;
-
-  const generateStars = () => {
-    const stars = [];
-
-    for (let i = 1; i <= maxRating; i++) {
-      if (i <= rating) {
-        stars.push(
-          <span key={i} className='star-fill'>
-            ★
-          </span>
-        );
-      } else {
-        stars.push(
-          <span key={i} className='star-empty'>
-            ☆
-          </span>
-        );
-      }
-    }
-
-    return stars;
-  };
 
   return (
     <div className='sections'>
@@ -48,7 +27,7 @@ const Sections = (props) => {
             <span key={index}>{tag}</span>
           ))}
         </div>
-        <div className='stars'>{generateStars()}</div>
+        <Rating rating={logement.rating} maxRating={maxRating} />
       </div>
 
       <Articles logement={logement} />
